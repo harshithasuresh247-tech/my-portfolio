@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My personal student portfolio">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav aria-label="Main navigation">
+            <h2>My Portfolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <p>Hello, welcome to my portfolio!</p>
+            <h1>Hi, I'm <span>Harshitha</span></h1>
+            <h2>Student | Future Developer</h2>
+            <p>I enjoy learning technology and building creative projects.</p>
+            <a class="btn" href="#projects">Explore My Work</a>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <img src="https://placehold.co/180x180?text=My+Photo"
+                 alt="Placeholder portrait for my portfolio">
+            <p>I am a student passionate about coding, web development,
+               and learning new technologies.</p>
+        </section>
+
+        <section id="skills">
+            <h2>My Skills</h2>
+            <ul class="skills-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Git and GitHub</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <article class="project">
+                <h3>Personal Portfolio</h3>
+                <p>A responsive website introducing me and my skills.</p>
+            </article>
+            <article class="project">
+                <h3>Student Helper</h3>
+                <p>A project idea to help students organize their work.</p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">name</label>
+                <input id="name" name="name" type="text" required>
+
+                <label for="email">email</label>
+                <input id="email" name="email" type="email" required>
+
+                <label for="message">Your message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <p id="formMessage" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Your Name. All rights reserved.</p>
+        <button id="themeButton" type="button">Toggle Dark Mode</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

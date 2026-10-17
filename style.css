@@ -1,0 +1,165 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #243047;
+    background: #f4f6fb;
+}
+
+header {
+    background: #172554;
+    color: white;
+    padding: 16px 6%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+nav ul {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #93c5fd;
+}
+
+section {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.hero {
+    background: linear-gradient(135deg, #dbeafe, #ede9fe);
+    padding: 90px 8%;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+.hero span {
+    color: #4338ca;
+}
+
+.btn, button {
+    display: inline-block;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #4338ca;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover, button:hover {
+    background: #312e81;
+}
+
+#about img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li, .project {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #00000012;
+}
+
+.project {
+    max-width: 550px;
+    margin: 16px auto;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    display: grid;
+    gap: 12px;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #172554;
+    color: white;
+}
+
+body.dark {
+    background: #111827;
+    color: #f9fafb;
+}
+
+body.dark .project,
+body.dark .skills-list li {
+    background: #1f2937;
+    color: #f9fafb;
+}
+
+body.dark .hero {
+    background: #273449;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+}
